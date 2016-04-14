@@ -14,21 +14,45 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         
         tabBar.tintColor = UIColor.orangeColor()
-        // Do any additional setup after loading the view.
-        addChildViewController("HomeViewController", title: "首页", imageNamed: "tabbar_home")
-        addChildViewController("MessageViewController", title: "消息", imageNamed: "tabbar_message_center")
 
-        addChildViewController("DiscoverViewController", title: "广场", imageNamed: "tabbar_discover")
-        addChildViewController("ProfileViewController", title: "我", imageNamed: "tabbar_profile")
+        
+        
+        let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil)
+        
+        if let jsonPath = path{
+            let jsonData = NSData(contentsOfFile: jsonPath)
+      
+            do{
+                let dictArr = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers)
+                print(dictArr)
+                
+                for dict in dictArr as! [[String:String]] {
+                    addChildViewController(dict["vcName"]!, title: dict["title"]!, imageNamed: dict["imageName"]!)
+                }
 
+            }catch{
+                print(error)
+                addChildViewController("HomeViewController", title: "首页", imageNamed: "tabbar_home")
+                addChildViewController("MessageViewController", title: "消息", imageNamed: "tabbar_message_center")
+            
+                addChildViewController("DiscoverViewController", title: "广场", imageNamed: "tabbar_discover")
+                addChildViewController("ProfileViewController", title: "我", imageNamed: "tabbar_profile")
+            }
+       
+        }
+        
     }
+    
+        
 
-    private func addChildViewController(childControllerName: String, title:String, imageNamed:String) {
+
+
+        private func addChildViewController(childControllerName: String, title:String, imageNamed:String) {
 
         let ns = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String
         let cls:AnyClass? = NSClassFromString(ns + "." + childControllerName)
         
-        let vcCls = cls as! UIViewController.Type
+        let vcCls = cls as! UITableViewController.Type
         let vc = vcCls.init()
         
         
