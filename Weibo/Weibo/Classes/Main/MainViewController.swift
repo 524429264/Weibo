@@ -12,24 +12,27 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tabBar.tintColor = UIColor.orangeColor()
         // Do any additional setup after loading the view.
+        addChildViewController(HomeViewController(), title: "首页", imageNamed: "tabbar_home")
+        addChildViewController(MessageViewController(), title: "消息", imageNamed: "tabbar_message_center")
+
+        addChildViewController(DiscoverViewController(), title: "广场", imageNamed: "tabbar_discover")
+        addChildViewController(ProfileViewController(), title: "我", imageNamed: "tabbar_profile")
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func addChildViewController(childController: UIViewController, title:String, imageNamed:String) {
+        childController.tabBarItem.image = UIImage(named: imageNamed)
+        childController.tabBarItem.selectedImage = UIImage(named: imageNamed + "_highlighted")
+        childController.title = title
+        
+        let nav = UINavigationController()
+        nav.addChildViewController(childController)
+        
+        addChildViewController(nav)
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -1,5 +1,5 @@
 //
-//  DiscoverViewController.swift
+//  ProfileViewController.swift
 //  Weibo
 //
 //  Created by nsky on 16/4/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiscoverViewController: UITableViewController {
+class ProfileViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
