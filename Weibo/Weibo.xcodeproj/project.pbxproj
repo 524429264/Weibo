@@ -19,6 +19,17 @@
 		6B44A1BF1CBFEE4500DA9D7F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1BE1CBFEE4500DA9D7F /* ProfileViewController.swift */; };
 		6B44A1C31CBFF22800DA9D7F /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B44A1C11CBFF22800DA9D7F /* MainVCSettings.json */; };
 		6B44A1C41CBFF22800DA9D7F /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1C21CBFF22800DA9D7F /* NullViewController.swift */; };
+		6B44A1C61CC0749D00DA9D7F /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1C51CC0749D00DA9D7F /* UIView+AutoLayout.swift */; };
+		6B44A1C81CC074DF00DA9D7F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1C71CC074DF00DA9D7F /* BaseTableViewController.swift */; };
+		6B44A1CA1CC074FD00DA9D7F /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1C91CC074FD00DA9D7F /* VisitorView.swift */; };
+		6B44A1D11CC0D2C100DA9D7F /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1D01CC0D2C100DA9D7F /* UIBarButtonItem+Category.swift */; };
+		6B44A1D31CC0D3EC00DA9D7F /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1D21CC0D3EC00DA9D7F /* TitleButton.swift */; };
+		6B44A1F31CC31AE200DA9D7F /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1F21CC31AE200DA9D7F /* PopoverPresentationController.swift */; };
+		6B44A1F51CC31B9300DA9D7F /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B44A1F41CC31B9300DA9D7F /* PopoverViewController.storyboard */; };
+		6B44A1F71CC35D3200DA9D7F /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1F61CC35D3200DA9D7F /* PopoverAnimator.swift */; };
+		6B44A1FA1CC36B7300DA9D7F /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B44A1F91CC36B7300DA9D7F /* QRCodeViewController.storyboard */; };
+		6B44A1FC1CC36C9900DA9D7F /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1FB1CC36C9900DA9D7F /* QRCodeViewController.swift */; };
+		6B44A1FE1CC40A7F00DA9D7F /* QRCodeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44A1FD1CC40A7F00DA9D7F /* QRCodeCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +68,17 @@
 		6B44A1BE1CBFEE4500DA9D7F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6B44A1C11CBFF22800DA9D7F /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		6B44A1C21CBFF22800DA9D7F /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		6B44A1C51CC0749D00DA9D7F /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		6B44A1C71CC074DF00DA9D7F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		6B44A1C91CC074FD00DA9D7F /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		6B44A1D01CC0D2C100DA9D7F /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		6B44A1D21CC0D3EC00DA9D7F /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		6B44A1F21CC31AE200DA9D7F /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
+		6B44A1F41CC31B9300DA9D7F /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
+		6B44A1F61CC35D3200DA9D7F /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		6B44A1F91CC36B7300DA9D7F /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		6B44A1FB1CC36C9900DA9D7F /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		6B44A1FD1CC40A7F00DA9D7F /* QRCodeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +180,8 @@
 		6B44A1B21CBFE80A00DA9D7F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				6B44A1C01CBFF22800DA9D7F /* Resource */,
+				6B44A1F81CC36B4600DA9D7F /* QRCode */,
+				6B44A1F11CC31AB600DA9D7F /* Popover */,
 				6B44A1B31CBFE80A00DA9D7F /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -167,7 +190,10 @@
 		6B44A1B41CBFE80A00DA9D7F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6B44A1C01CBFF22800DA9D7F /* Resource */,
 				6B44A1B51CBFE80A00DA9D7F /* MainViewController.swift */,
+				6B44A1C71CC074DF00DA9D7F /* BaseTableViewController.swift */,
+				6B44A1C91CC074FD00DA9D7F /* VisitorView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -191,6 +217,9 @@
 		6B44A1B91CBFE80A00DA9D7F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6B44A1C51CC0749D00DA9D7F /* UIView+AutoLayout.swift */,
+				6B44A1D01CC0D2C100DA9D7F /* UIBarButtonItem+Category.swift */,
+				6B44A1D21CC0D3EC00DA9D7F /* TitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -201,7 +230,28 @@
 				6B44A1C11CBFF22800DA9D7F /* MainVCSettings.json */,
 				6B44A1C21CBFF22800DA9D7F /* NullViewController.swift */,
 			);
-			path = Resource;
+			name = Resource;
+			path = ../Home/Resource;
+			sourceTree = "<group>";
+		};
+		6B44A1F11CC31AB600DA9D7F /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				6B44A1F21CC31AE200DA9D7F /* PopoverPresentationController.swift */,
+				6B44A1F41CC31B9300DA9D7F /* PopoverViewController.storyboard */,
+				6B44A1F61CC35D3200DA9D7F /* PopoverAnimator.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
+		6B44A1F81CC36B4600DA9D7F /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				6B44A1F91CC36B7300DA9D7F /* QRCodeViewController.storyboard */,
+				6B44A1FD1CC40A7F00DA9D7F /* QRCodeCardViewController.swift */,
+				6B44A1FB1CC36C9900DA9D7F /* QRCodeViewController.swift */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,8 +361,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B44A1F51CC31B9300DA9D7F /* PopoverViewController.storyboard in Resources */,
 				6B44A1C31CBFF22800DA9D7F /* MainVCSettings.json in Resources */,
 				6B05F8971CBFE6320001F144 /* Assets.xcassets in Resources */,
+				6B44A1FA1CC36B7300DA9D7F /* QRCodeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,13 +389,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B44A1CA1CC074FD00DA9D7F /* VisitorView.swift in Sources */,
 				6B44A1BA1CBFE80A00DA9D7F /* DiscoverViewController.swift in Sources */,
+				6B44A1FC1CC36C9900DA9D7F /* QRCodeViewController.swift in Sources */,
+				6B44A1C61CC0749D00DA9D7F /* UIView+AutoLayout.swift in Sources */,
+				6B44A1F71CC35D3200DA9D7F /* PopoverAnimator.swift in Sources */,
+				6B44A1C81CC074DF00DA9D7F /* BaseTableViewController.swift in Sources */,
+				6B44A1FE1CC40A7F00DA9D7F /* QRCodeCardViewController.swift in Sources */,
 				6B05F8921CBFE6320001F144 /* ViewController.swift in Sources */,
 				6B05F8901CBFE6320001F144 /* AppDelegate.swift in Sources */,
 				6B44A1BB1CBFE80A00DA9D7F /* HomeViewController.swift in Sources */,
 				6B44A1BF1CBFEE4500DA9D7F /* ProfileViewController.swift in Sources */,
+				6B44A1D11CC0D2C100DA9D7F /* UIBarButtonItem+Category.swift in Sources */,
 				6B44A1C41CBFF22800DA9D7F /* NullViewController.swift in Sources */,
 				6B44A1BD1CBFE80A00DA9D7F /* MessageViewController.swift in Sources */,
+				6B44A1F31CC31AE200DA9D7F /* PopoverPresentationController.swift in Sources */,
+				6B44A1D31CC0D3EC00DA9D7F /* TitleButton.swift in Sources */,
 				6B44A1BC1CBFE80A00DA9D7F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,11 +531,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Weibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nationsky.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -483,8 +546,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Weibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nationsky.Weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

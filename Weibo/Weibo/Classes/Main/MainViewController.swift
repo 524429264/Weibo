@@ -12,8 +12,7 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBar.tintColor = UIColor.orangeColor()
+
 
         addChildViewControllers()
         
@@ -85,6 +84,9 @@ class MainViewController: UITabBarController {
         vc.tabBarItem.image = UIImage(named: imageNamed)
         vc.tabBarItem.selectedImage = UIImage(named: imageNamed + "_highlighted")
         vc.title = title
+            
+        tabBar.tintColor = UIColor.orangeColor()
+
         
         let nav = UINavigationController()
         nav.addChildViewController(vc)
