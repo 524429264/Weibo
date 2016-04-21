@@ -9,8 +9,9 @@
 import UIKit
 
 class BaseTableViewController: UITableViewController, VisitorViewDelegate {
-    
-    var login: Bool = true
+    // 定义一个变量保存用户当前是否登录
+    var login: Bool = UserAccount.userLogin()
+    // 定义属性保存未登录状态
     var visitorView: VisitorView?
     
     
@@ -21,6 +22,9 @@ class BaseTableViewController: UITableViewController, VisitorViewDelegate {
 
     
     //MARK: - 内部控制方法
+    /**
+     创建未登录界面
+     */
     private func setupVisitorView()
     {
         visitorView = VisitorView()
@@ -37,6 +41,10 @@ class BaseTableViewController: UITableViewController, VisitorViewDelegate {
     
     func visitorViewLogin() {
         print(#function)
+        
+        let oauthVC = OAuthViewController()
+        let nav = UINavigationController(rootViewController: oauthVC)
+        presentViewController(nav, animated: true, completion: nil)
     }
     
     func visitorViewRegister() {

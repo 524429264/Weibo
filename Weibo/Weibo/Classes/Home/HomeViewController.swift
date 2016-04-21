@@ -38,6 +38,7 @@ class HomeViewController: BaseTableViewController {
     
     func leftBtnClick() {
         print(#function)
+        
     }
     
     func rightBtnClick() {

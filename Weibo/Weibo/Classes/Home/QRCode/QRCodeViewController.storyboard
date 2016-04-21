@@ -71,10 +71,10 @@
                                 <rect key="frame" x="270" y="480" width="60" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="我的名片" backgroundImage="qrcode_button_background">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="myCardBtnClick:" destination="OfE-Le-6bw" eventType="touchUpInside" id="Qp4-64-6cg"/>
+                                    <action selector="showMyCard:" destination="OfE-Le-6bw" eventType="touchUpInside" id="jxa-iD-JTS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,16 +92,17 @@
                     <navigationItem key="navigationItem" id="LtW-86-tFz">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="ZgG-om-BhO">
                             <connections>
-                                <action selector="closeBtnClick:" destination="OfE-Le-6bw" id="mw5-QM-jeU"/>
+                                <action selector="closeItemClick:" destination="OfE-Le-6bw" id="WcP-Ts-5dw"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="相册" id="Qel-qZ-VSb"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="containerHeightCons" destination="ZCi-MN-01I" id="w2C-qs-OHi"/>
-                        <outlet property="customTabBar" destination="40S-zl-E3S" id="tFP-wr-G3f"/>
-                        <outlet property="scanLineCons" destination="VKJ-mm-wwt" id="uPB-xv-xKv"/>
-                        <outlet property="scanLineView" destination="4GK-mD-ECV" id="ddE-2v-Lyf"/>
+                        <outlet property="containerHeight" destination="ZCi-MN-01I" id="qNM-D1-a4f"/>
+                        <outlet property="containerWidth" destination="E7W-Wd-Cvb" id="xwT-KV-Ckd"/>
+                        <outlet property="customTabBar" destination="40S-zl-E3S" id="kov-Rc-z0T"/>
+                        <outlet property="scanlineCons" destination="VKJ-mm-wwt" id="8sB-KD-w39"/>
+                        <outlet property="scanlineView" destination="4GK-mD-ECV" id="sFb-V1-ge8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cez-Mq-TwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
