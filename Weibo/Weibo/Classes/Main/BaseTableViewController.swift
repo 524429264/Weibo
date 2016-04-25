@@ -14,7 +14,6 @@ class BaseTableViewController: UITableViewController, VisitorViewDelegate {
     // 定义属性保存未登录状态
     var visitorView: VisitorView?
     
-    
     override func loadView() {
         
         login ? super.loadView() : setupVisitorView()

@@ -34,10 +34,8 @@ class MainViewController: UITabBarController {
         tabBar.addSubview(composeBtn)
         let width = UIScreen.mainScreen().bounds.width / CGFloat((viewControllers?.count)!)
         let rect = CGRect(x:0,y: 0 ,width: width,height: 49)
-//        composeBtn.frame = rect
         
         composeBtn.frame = CGRectOffset(rect, 2 * width, 0)
-        
         
     }
     

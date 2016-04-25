@@ -103,8 +103,24 @@ extension OAuthViewController: UIWebViewDelegate
             let account = UserAccount(dict: JSON as! [String: AnyObject])
             print(account)
             
-            // 2.归档数据模型
-            account.saveAccount()
+            // 2.获取用户信息
+            account.loadUserInfo({ (account, error) in
+                if account != nil
+                {
+                    
+                    NSNotificationCenter.defaultCenter().postNotificationName(XMGRootViewControllerSwitchNotification, object: false)
+                    self.close()
+                    
+                    print(account)
+                    
+                    return
+                    
+                }
+                SVProgressHUD.showInfoWithStatus("网络不给力...")
+                SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
+           
+            })
+
             
 
         }) { (_, error) in

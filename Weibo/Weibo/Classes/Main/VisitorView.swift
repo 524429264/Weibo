@@ -137,7 +137,6 @@ class VisitorView: UIView {
         btn.setBackgroundImage(UIImage(named:"common_button_white_disable"), forState: UIControlState.Normal)
         btn.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
 
-       
         btn.addTarget(self, action: #selector(VisitorView.registerBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         return btn
     }()
